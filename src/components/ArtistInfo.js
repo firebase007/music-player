@@ -15,7 +15,7 @@ class ArtisteInfo extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=Cher&api_key=a6afc71d9061bf98a01189558fbac7b9&format=json&limit=10"
+        "https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=Cher&api_key=a6afc71d9061bf98a01189558fbac7b9&format=json&limit=10"
       )
       .then(responseData => {
         console.log(responseData.data);

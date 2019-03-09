@@ -24,7 +24,7 @@ class TrendingArtistes extends React.Component {
   componentDidMount() {
     axios
       .get(
-        "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=cher&api_key=a6afc71d9061bf98a01189558fbac7b9&format=json"
+        "https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=cher&api_key=a6afc71d9061bf98a01189558fbac7b9&format=json"
       )
       .then(responseData => {
         console.log(responseData.data);
