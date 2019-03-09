@@ -51,7 +51,8 @@ class TrendingArtistes extends React.Component {
       return <div>Loading...</div>;
     }
     let topArtistes = allArtistes.topalbums.album.map((artiste, i) => {
-      return (
+        return (
+         
         <li
           key={i}
           className="playlist-card"
@@ -74,29 +75,29 @@ class TrendingArtistes extends React.Component {
             </Card>
                   <span style={{fontSize: "10px", fontWeight:"5PX"}}>{artiste.name}</span>
           </Col>
-          <Col>
-            <Modal
-              isOpen={modal}
-              fade={false}
-              toggle={this.toggleArtisteDetails}
-              className={this.props.className}
-            >
-              <ModalHeader toggle={this.toggleArtisteDetails}>
-                <img src={artiste.image[2]["#text"]} alt="artist img" />
-                <span style={{padding: "5px"}}>{artiste.name}</span>
-              </ModalHeader>
-                      <ModalBody>
-                          <ArtistInfo/>
-                          </ModalBody>
-            </Modal>
-          </Col>
+          
+                <Modal
+                    isOpen={modal}
+                    fade={false}
+                    toggle={this.toggleArtisteDetails}
+                    className={this.props.className}
+                >
+                    <ModalHeader toggle={this.toggleArtisteDetails}>
+                        <img src={artiste.image[2]["#text"]} alt="artist img" />
+                        <span style={{ padding: "5px" }}>{artiste.name}</span>
+                    </ModalHeader>
+                    <ModalBody>
+                        <ArtistInfo />
+                    </ModalBody>
+                </Modal>
+          
         </li>
+        
       );
     });
       return (
         <div>
               <ul className="all-generes">{topArtistes}</ul>
-              <ArtistInfo/>
         </div>
       );
   }

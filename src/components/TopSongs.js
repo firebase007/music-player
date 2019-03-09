@@ -59,7 +59,6 @@ class TopSongs extends React.Component {
       return (
         <div>
           <ul className="TrackList">{tracks}</ul>
-          <div><Controls currentTrackDetails={currentTrack}/></div>
         </div>
       );
 	}
