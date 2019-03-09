@@ -18,51 +18,15 @@ code {
 
 @import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700";
 
-/* #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-}  */
 
 .App {
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-/* .App .Artwork {
-  width: 280px;
-  height: 280px;
-  background-size: cover;
-  position: relative;
-}
-.App .Artwork:hover .Controls {
-  background: rgba(41, 23, 32, 0.8);
-}
-.App .Artwork .Controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  height: 280px;
-  box-sizing: border-box;
-  background: rgba(41, 23, 32, 0.3);
-  justify-content: space-around;
-  padding: 20px 0;
-  align-items: center;
-  transition: background .125s ease;
-}
-.App .Artwork .Controls .fa-play,
-.App .Artwork .Controls .fa-pause {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}  */
 
 .App .TrackList {
   background: whitesmoke;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 .App .TrackList li {
   display: flex;
@@ -119,16 +83,6 @@ div.side-menu {
   list-style: none;
 }
 
-/* div.side-menu-background {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	position: absolute;
-	background: no-repeat 10% 0%;
-	background-size: auto 100%;
-	opacity: .07;
-	z-index: 95;
-} */
 
 div.side-menu ul {
   margin: 25px;
