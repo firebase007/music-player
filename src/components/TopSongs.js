@@ -48,7 +48,10 @@ class TopSongs extends React.Component {
         let tracks = topSongs.tracks.track.map((track, i) => {
 			return (
         <li key={i} onClick={() => this.handleClick(track)}>
-          <div className="" style={{ margin: "5px"}}>
+          <span className="position">
+            <FaPlayCircle className="icon" />
+          </span>
+          <div className="" style={{ margin: "5px" }}>
             {<img src={track.image[0]["#text"]} alt="artist img" />}
           </div>
           <div className="title">{track.name}</div>

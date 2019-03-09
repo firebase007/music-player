@@ -146,23 +146,13 @@ div.side-menu li a i {
 }
 
 
-.position {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .icon {
-  position: absolute;
-  right: -20px;
-  bottom: -20px;
   width: 32px;
   height: 32px;
   border-radius: 20px;
   border: 4px solid white;
-  background: blue;
+  background: #291720;
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
